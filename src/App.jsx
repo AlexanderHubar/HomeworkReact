@@ -12,6 +12,8 @@ import Blog from './Components/sections/BlogSection';
 import Contact from './Components/sections/ContactSection';
 
 import Footer from './Components/footer/Footer';
+import Industry from "./industry";
+
 
 class App extends React.Component {
     render() {
@@ -21,21 +23,23 @@ class App extends React.Component {
 
                     <Header />
 
-                    <Welcome />
+                    {/*<Welcome />*/}
 
-                    <About />
+                    {/*<About />*/}
 
-                    <Features />
+                    {/*<Industry />*/}
 
-                    <Project />
+                    {/*<Features />*/}
 
-                    <Services />
+                    {/*<Project />*/}
 
-                    <Testimonials />
+                    {/*<Services />*/}
 
-                    <Blog />
+                    {/*<Testimonials />*/}
 
-                    <Contact />
+                    {/*<Blog />*/}
+
+                    {/*<Contact />*/}
 
                 </div>
 
