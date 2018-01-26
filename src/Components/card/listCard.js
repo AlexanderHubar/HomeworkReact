@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-class listCard extends React.Component {
+class  listCard extends React.Component {
     render() {
         return (
             <div className="col-sm-3">
-                <a href={this.props.link} className="d-block link-industry text-white text-center text-uppercase">
+                <Link to={this.props.link} className="d-block link-industry text-white text-center text-uppercase">
                     <i className={this.props.icon}></i>{this.props.title}
-                </a>
+                </Link>
             </div>
         );
     }

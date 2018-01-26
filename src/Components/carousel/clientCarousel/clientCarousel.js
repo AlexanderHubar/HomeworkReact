@@ -36,6 +36,25 @@ const BlockquoteData = [
 ];
 
 class clientCarousel extends React.Component {
+    componentDidMount () {
+        const $ = window.$;
+        $('.blockquote-carousel').slick({
+            swipe: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            asNavFor: '.blockquote-thumb-nav'
+        });
+        $('.blockquote-thumb-nav').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.blockquote-carousel',
+            centerMode: true,
+            focusOnSelect: true,
+            variableWidth: true,
+            initialSlide: 1
+        });
+    }
     render () {
         return (
             <div>

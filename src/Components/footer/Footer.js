@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Link } from 'react-router-dom';
+
 const Footer = () => {
     return (
         <footer className="main-footer">
@@ -15,34 +17,16 @@ const Footer = () => {
                         <h5>navigation</h5>
                         <ul>
                             <li>
-                                <a href="index.html">Home</a>
+                                <Link to="/">Home</Link>
                             </li>
                             <li>
-                                <a href="about-us.html">about us</a>
+                                <Link to="/about">about us</Link>
                             </li>
                             <li>
-                                <a href="industry.html">industry</a>
+                                <Link to="/industry">industry</Link>
                             </li>
                             <li>
-                                <a href="/">services</a>
-                            </li>
-                            <li className="dropdown">
-                                <a className="dropdown-toggle" href="/" role="button"
-                                   data-toggle="dropdown"
-                                   data-hover="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    pages
-                                </a>
-                                <div className="dropdown-menu">
-                                    <a className="dropdown-item" href="blog.html">Blog</a>
-                                    <a className="dropdown-item" href="blog-post.html">Blog post</a>
-                                    <a className="dropdown-item" href="testimonials.html">Testimonials</a>
-                                    <a className="dropdown-item" href="pricing.html">Pricing</a>
-                                    <a className="dropdown-item" href="careers.html">Careers</a>
-                                    <a className="dropdown-item" href="404.html">404</a>
-                                </div>
-                            </li>
-                            <li>
-                                <a href="contact-us.html">Contact us</a>
+                                <Link to="/contact">Contact us</Link>
                             </li>
                         </ul>
                     </div>
@@ -50,25 +34,25 @@ const Footer = () => {
                         <h5>Industary</h5>
                         <ul>
                             <li>
-                                <a href="industry.html">Education</a>
+                                <Link to="/industry">Education</Link>
                             </li>
                             <li>
-                                <a href="industry.html">business</a>
+                                <Link to="/industry">business</Link>
                             </li>
                             <li>
-                                <a href="industry.html">realestate</a>
+                                <Link to="/industry">realestate</Link>
                             </li>
                             <li>
-                                <a href="industry.html">technology</a>
+                                <Link to="/industry">technology</Link>
                             </li>
                             <li>
-                                <a href="industry.html">banking</a>
+                                <Link to="/industry">banking</Link>
                             </li>
                             <li>
-                                <a href="industry.html">communication</a>
+                                <Link to="/industry">communication</Link>
                             </li>
                             <li>
-                                <a href="industry.html">much more</a>
+                                <Link to="/industry">much more</Link>
                             </li>
                         </ul>
                     </div>

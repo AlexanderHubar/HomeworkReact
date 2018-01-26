@@ -1,19 +1,8 @@
 import React from 'react';
 
 import Header from './Components/header/Header';
-
-import Welcome from './Components/sections/WelcomeSection';
-import About from './Components/sections/AboutSection';
-import Features from './Components/sections/FeaturesSection';
-import Project from './Components/sections/ProjectSection';
-import Services from './Components/sections/ServicesSection';
-import Testimonials from './Components/sections/TestimonialsSection';
-import Blog from './Components/sections/BlogSection';
-import Contact from './Components/sections/ContactSection';
-
+import Main from './Main';
 import Footer from './Components/footer/Footer';
-import Industry from "./industry";
-
 
 class App extends React.Component {
     render() {
@@ -22,24 +11,7 @@ class App extends React.Component {
                 <div className="wrapper main-page">
 
                     <Header />
-
-                    {/*<Welcome />*/}
-
-                    {/*<About />*/}
-
-                    {/*<Industry />*/}
-
-                    {/*<Features />*/}
-
-                    {/*<Project />*/}
-
-                    {/*<Services />*/}
-
-                    {/*<Testimonials />*/}
-
-                    {/*<Blog />*/}
-
-                    {/*<Contact />*/}
+                    <Main />
 
                 </div>
 

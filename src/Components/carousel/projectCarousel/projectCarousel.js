@@ -26,6 +26,15 @@ const CarouselData = [
 ];
 
 class projectCarousel extends React.Component {
+    componentDidMount () {
+        const $ = window.$;
+        $('#projectCarousel').slick({
+            autoplay: true,
+            arrows: false,
+            dots: true,
+            infinite: true
+        });
+    }
     render () {
         return (
             <div id="projectCarousel" className="project-carousel col-lg-8 card-slider card border-0">
